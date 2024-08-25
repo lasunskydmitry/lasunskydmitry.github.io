@@ -1,0 +1,344 @@
+body{
+   margin: 0;
+   font-family: "Raleway", sans-serif;
+   font-size: 14px;
+   color: blue;
+   background: #fff;
+   -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after{
+   box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+   margin: 0;
+}
+p{
+   margin: 0 0 10px 0;
+}
+
+/*********** container ***********/
+.container{
+   width: 100%;
+   max-width: 1850px;
+   margin: 0 auto;
+}
+
+/*********** header ***********/
+.header{
+   height: 200px;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+}
+
+.header_inner{
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   padding: 23px 0;
+   border-bottom: 3px solid #55cff6;
+}
+
+/*********** nav ***********/
+.nav{
+   display: flex;
+   font-size: 23px;
+   font-weight: 700;
+
+}
+
+.nav_link{
+   margin-left: 50px;
+   color: #55cff6;
+   text-decoration: none;
+   opacity: 0.65;
+}
+
+.nav_link:first-child{
+   margin-left: 0;
+}
+
+.nav_link:hover{
+   text-decoration: underline;
+   opacity: 1;
+}
+
+/*********** intro ***********/
+.intro{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 1080px;
+   background: #31344e url("img/main/background.jpg") center no-repeat;
+   padding-top: 200px;
+}
+
+.intro_inner{
+   width: 100%;
+   max-width: 970px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.intro_title{
+   margin: 0 0 30px 0;
+   font-family: "Courier New",monospace;
+   font-size: 88px;
+   line-height: 1.1;
+   color: #FFF;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.intro_subtitle{
+   font-family: "URW Chancery L", cursive;
+   font-style: oblique;
+   margin-bottom: 60px;
+   font-size: 22px;
+   line-height: 1.5;
+   color: #FFF;
+   font-weight: 400;
+}
+
+/*********** btn ***********/
+.btn{
+   display: inline-block;
+   vertical-align: top;
+   font-size: 13px;
+   color: #fff;
+   font-weight: 600;
+   text-transform: uppercase;
+   text-decoration: none;
+   padding: 14px 40px 14px 40px;
+   border-radius: 5px;
+   font-family: inherit;
+   border: 0;
+   cursor: pointer;
+}
+
+.btn--red{
+   background-color: #FF0000;
+}
+
+.btn--red:hover{
+   background-color: #cc0000;
+}
+
+/*********** features ***********/
+.features{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 50px 0;
+}
+
+.features_item{
+   width: 33.3%;
+   text-align: center;
+   padding: 0 40px;
+   margin: 25px 0;
+}
+
+.features_icon{
+   margin-bottom: 25px;
+   transition: 1s; /* Время эффекта */
+}
+
+.features_icon:hover{
+   transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.features_title{
+   margin-bottom: 20px;
+   font-size: 14px;
+   color: #6caefb;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.features_text{
+   font-size: 14px;
+   color: #3966d9;
+   line-height: 1.5;
+}
+
+/*********** reasons ***********/
+.reasons{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.reasons_item{
+   width: 25%;
+   height: 389px;
+   border-right: 1px solid #fff;
+   position: relative;
+   overflow: hidden;
+}
+
+.reasons_photo{
+   transition: 1s; /* Время изменения цвета изображения */
+   filter: grayscale(1); /* Черно-белый фильтр для изображения */
+}
+
+.reasons_photo:hover{
+   filter: grayscale(0); /* Цветное изображение при наведении */
+}
+
+/*********** techsupport ***********/
+.container_tech{
+   padding: 50;
+}
+
+.gear_wheel{
+   margin: 0 150px;
+}
+
+.techsupport{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 70px 0 0 0;
+}
+
+.techsupport_item{
+   width: 33.3%;
+   text-align: center;
+   padding: 0 40px;
+   margin: 25px 0;
+}
+
+.tech_title{
+   margin-top: -190px;
+   margin-left: 300px;
+   font-size: 70px;
+   color:#6c7481;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.tech_text{
+   margin-left: 300px;
+   font-size: 30px;
+   color: #818692;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.techsupport_icon{
+   margin-top: 30px;
+   filter: blur(3px); /* Размытие изображения */
+   transition: .5s; /* Время перехода */
+}
+
+.techsupport_icon:hover{
+   filter: blur(0); /* Отменяем размытие */
+}
+
+.gear_wheel {
+   margin-top: 10px;
+   width: 250px;
+   -webkit-animation-name: rotation;
+   -webkit-animation-duration: 10s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: linear;
+   -moz-animation-name: rotation;
+   -moz-animation-duration: 10s;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: linear;
+   -o-animation-name: rotation;
+   -o-animation-duration: 10s;
+   -o-animation-iteration-count: infinite;
+   -o-animation-timing-function: linear;
+   animation-name: rotation;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotation {
+   0% {-webkit-transform:rotate(0deg);
+   -moz-transform:rotate(0deg);
+   -o-transform:rotate(0deg);
+   transform:rotate(0deg);}
+   100% {-webkit-transform:rotate(360deg);
+   -moz-transform:rotate(360deg);
+   -o-transform:rotate(360deg);
+   transform:rotate(360deg);}
+}
+@-moz-keyframes rotation {
+   0% {-webkit-transform:rotate(0deg);
+   -moz-transform:rotate(0deg);
+   -o-transform:rotate(0deg);
+   transform:rotate(0deg);}
+   100% {-webkit-transform:rotate(360deg);
+   -moz-transform:rotate(360deg);
+   -o-transform:rotate(360deg);
+   transform:rotate(360deg);}
+}
+@-o-keyframes rotation {
+   0% {-webkit-transform:rotate(0deg);
+   -moz-transform:rotate(0deg);
+   -o-transform:rotate(0deg);
+   transform:rotate(0deg);}
+   100% {-webkit-transform:rotate(360deg);
+   -moz-transform:rotate(360deg);
+   -o-transform:rotate(360deg);
+   transform:rotate(360deg);}
+}
+@keyframes rotation {
+   0% {-webkit-transform:rotate(0deg);
+   -moz-transform:rotate(0deg);
+   -o-transform:rotate(0deg);
+   transform:rotate(0deg);}
+   100% {-webkit-transform:rotate(360deg);
+   -moz-transform:rotate(720deg);
+   -o-transform:rotate(360deg);
+   transform:rotate(360deg);}
+}
+
+/*********** social ***********/
+.social{
+   background: #31344e url("img/main/contacts.jpg") center no-repeat;
+   height: 310px;
+}
+
+.social_inner{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.social_las{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
+}
+
+.social_block{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 50px 444px;
+}
+
+.social_item{
+   display: flex;
+   flex-wrap: wrap;
+   margin-right: 7px;
+}
+
+.social_icon{
+   border-radius: 50%;
+   -webkit-transition: -webkit-transform .8s ease-in-out;
+   transition:         transform .8s ease-in-out;
+}
+
+.social_icon:hover{
+   -webkit-transform: rotate(360deg); /* Градусы поворота можно изменить по необходимости */
+   transform: rotate(360deg); /* Градусы поворота можно изменить по необходимости */
+}
